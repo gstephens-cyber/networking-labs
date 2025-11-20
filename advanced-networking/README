@@ -1,0 +1,206 @@
+
+📘 Advanced Networking Labs
+
+Enterprise-grade topologies • Real security design • Professional-level routing
+
+This folder contains a curated set of advanced, real-world networking labs that go far beyond basic routing, NAT, and ACL exercises.
+These labs demonstrate the ability to design, secure, and troubleshoot enterprise-class networks, similar to what’s expected in:
+
+Cybersecurity Analyst / SOC roles
+
+Canadian Armed Forces Cyber Operator
+
+Network Security Engineer
+
+Infrastructure / NetOps positions
+
+These are not “student labs.”
+Each design simulates real-world architectures with multiple routers, switches, VLANs, DMZs, VPN tunnels, and layered security controls.
+
+🔥 Purpose of This Lab Collection
+
+To prove practical competency in:
+
+Network segmentation
+
+Perimeter security
+
+Enterprise routing protocols
+
+Layer-3 switching
+
+DMZ architectures
+
+Firewall-style ACL logic
+
+VPN encryption
+
+Traffic inspection / monitoring
+
+Redundancy and high availability
+
+Each lab includes:
+
+Detailed topology
+
+Step-by-step configuration
+
+Verification commands
+
+Packet Tracer file (.pkt)
+
+Written explanation of design & intent
+
+📁 Lab Index
+
+The following advanced labs are included (or will be):
+
+1. DMZ Firewall Architecture (DMZ-Firewall-Design/)
+
+A full enterprise perimeter network including:
+
+Public-facing web server (DMZ)
+
+Internal LAN
+
+Management network
+
+Edge router
+
+DMZ router
+
+Internal router
+
+NAT, static NAT
+
+Inbound/outbound ACLs
+
+DMZ → LAN isolation
+
+This is a real-world security architecture.
+
+2. Enterprise VLAN Segmentation (Enterprise-VLAN-Segmentation/)
+
+Multi-VLAN, multi-switch design with:
+
+Finance VLAN
+
+HR VLAN
+
+Guest VLAN
+
+Server VLAN
+
+Admin VLAN
+
+Router-on-a-stick
+
+Trunk links
+
+L3 switching (SVIs)
+
+ACLs enforcing VLAN boundaries
+
+A core portfolio lab for network security.
+
+3. OSPF Multi-Area Routing (OSPF-MultiArea/)
+
+Includes:
+
+Backbone (Area 0)
+
+Stub or Totally Stubby Areas
+
+Inter-area route summarization
+
+Route filtering
+
+Shows real routing design skill.
+
+4. IPSec Site-to-Site VPN (Site-to-Site-VPN-IPSec/)
+
+Simulates encrypted connectivity between remote sites:
+
+ISAKMP Phase 1
+
+IPSec Phase 2
+
+Crypto ACL
+
+Transform sets
+
+Tunnel verification commands
+
+Strong portfolio piece for cyber roles.
+
+5. L3 Core Switching & ACL Security (L3-Core-Switching/)
+
+Enterprise switching concepts:
+
+L3 core switch
+
+Inter-VLAN routing
+
+Server farm segmentation
+
+ACL filtering policies
+
+Gateway-on-a-stick vs. SVI comparisons
+
+6. High Availability (HSRP) (High-Availability-HSRP/)
+
+Includes:
+
+Redundant default gateway
+
+Active/standby configuration
+
+Failover verification
+
+Priority & preemption
+
+Shows understanding of enterprise failover.
+
+7. IDS/SPAN Monitoring Lab (IDS-SPAN-Monitoring/)
+
+Simulates network monitoring:
+
+SPAN port
+
+Sniffer PC
+
+Packet captures
+
+Malicious traffic examples
+
+ACL-based mitigation
+
+Strong SOC-analysis demonstration.
+
+🛠 Technology Used in Advanced Labs
+
+These labs include:
+
+Cisco 1941/2911 routers (with HWIC-2T modules)
+
+Cisco 2960 access switches
+
+Cisco 3560/Multilayer switches (where supported)
+
+Serial WAN links
+
+VLAN trunking
+
+Layer-3 SVIs
+
+OSPF, static routing, ACLs
+
+NAT, PAT, static NAT
+
+VPN configurations
+
+DMZ perimeter rules
+
+Packet captures and SPAN configuration
+
+All labs are designed in Cisco Packet Tracer for accessibility, but follow real-world network design standards.
