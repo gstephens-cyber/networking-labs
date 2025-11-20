@@ -1,206 +1,97 @@
-
 📘 Advanced Networking Labs
 
-Enterprise-grade topologies • Real security design • Professional-level routing
+A collection of enterprise-grade networking and security labs built using Cisco Packet Tracer, mirroring real-world architectures found in professional environments such as SOC teams, cyber defense, CAF Cyber Operator units, and enterprise NetOps.
 
-This folder contains a curated set of advanced, real-world networking labs that go far beyond basic routing, NAT, and ACL exercises.
-These labs demonstrate the ability to design, secure, and troubleshoot enterprise-class networks, similar to what’s expected in:
+These labs go beyond beginner routing and ACL exercises — each project demonstrates the ability to design, secure, and operate complex multi-layer networks with routers, switches, VLANs, DMZs, VPNs, and layered security controls.
 
-Cybersecurity Analyst / SOC roles
+🔥 What These Labs Demonstrate
 
-Canadian Armed Forces Cyber Operator
+Each advanced lab is built to prove hands-on capability in:
 
-Network Security Engineer
+Enterprise network segmentation
 
-Infrastructure / NetOps positions
-
-These are not “student labs.”
-Each design simulates real-world architectures with multiple routers, switches, VLANs, DMZs, VPN tunnels, and layered security controls.
-
-🔥 Purpose of This Lab Collection
-
-To prove practical competency in:
-
-Network segmentation
-
-Perimeter security
-
-Enterprise routing protocols
+Perimeter security and DMZ architecture
 
 Layer-3 switching
 
-DMZ architectures
+Multi-area OSPF routing
 
-Firewall-style ACL logic
+IPSec site-to-site VPN tunnels
 
-VPN encryption
+Firewall-style extended ACL logic
 
-Traffic inspection / monitoring
+High availability (HSRP)
 
-Redundancy and high availability
+SPAN/IDS monitoring and packet analysis
 
-Each lab includes:
+Realistic multi-router, multi-switch topologies
 
-Detailed topology
+All labs include:
 
-Step-by-step configuration
+Topology diagrams
 
-Verification commands
+Device/module requirements
 
-Packet Tracer file (.pkt)
+IP addressing plans
 
-Written explanation of design & intent
+Step-by-step configurations
 
-📁 Lab Index
+Verification + troubleshooting
 
-The following advanced labs are included (or will be):
+Packet Tracer .pkt files
 
-1. DMZ Firewall Architecture (DMZ-Firewall-Design/)
+Screenshots and notes
 
-A full enterprise perimeter network including:
+📁 Advanced Lab Index
+01 – DMZ Firewall Design
 
-Public-facing web server (DMZ)
+/advanced-networking/DMZ-Firewall-Design/
+Build a full enterprise perimeter network with an external router, DMZ segment, internal LAN, NAT, static NAT rules, and ACL-based firewalling.
 
-Internal LAN
+02 – Enterprise VLAN Segmentation
 
-Management network
+/advanced-networking/Enterprise-VLAN-Segmentation/
+Multiple VLANs (Finance, HR, Guest, Admin, Servers) with router-on-a-stick or L3 switch SVIs, trunk links, and ACL segmentation between departments.
 
-Edge router
+03 – OSPF Multi-Area
 
-DMZ router
+/advanced-networking/OSPF-MultiArea/
+Backbone (Area 0) + additional areas, route summarization, stub and totally stubby areas, and inter-area filtering.
 
-Internal router
+04 – Site-to-Site IPSec VPN Tunnel
 
-NAT, static NAT
+/advanced-networking/Site-to-Site-VPN-IPSec/
+Simulate encrypted connectivity between two remote sites using ISAKMP Phase 1, IPSec Phase 2, transform sets, and crypto ACLs.
 
-Inbound/outbound ACLs
+05 – L3 Core Switching & ACL Security
 
-DMZ → LAN isolation
+/advanced-networking/L3-Core-Switching/
+Enterprise core-switch design using SVIs, inter-VLAN routing, ACL firewalling, server farm segmentation, and routed switchports.
 
-This is a real-world security architecture.
+06 – High Availability (HSRP)
 
-2. Enterprise VLAN Segmentation (Enterprise-VLAN-Segmentation/)
+/advanced-networking/High-Availability-HSRP/
+Build redundant default gateways using HSRP (active/standby), test failover, and configure gateway preemption and priority tuning.
 
-Multi-VLAN, multi-switch design with:
+07 – IDS/SPAN Monitoring Lab
 
-Finance VLAN
+/advanced-networking/IDS-SPAN-Monitoring/
+Configure SPAN (port mirroring), attach a sniffer host, capture attack traffic, and apply mitigation via ACLs.
 
-HR VLAN
+🧰 Tools Used
 
-Guest VLAN
+Cisco Packet Tracer
 
-Server VLAN
+Cisco IOS Command Line Interface
 
-Admin VLAN
+GNS3 (optional future expansion)
 
-Router-on-a-stick
+Wireshark (SPAN monitoring labs)
 
-Trunk links
+Professional network diagrams
 
-L3 switching (SVIs)
+🎯 Goal of This Section
 
-ACLs enforcing VLAN boundaries
+This directory exists to show employers that you can build and manage real networks, not just pass school labs.
 
-A core portfolio lab for network security.
-
-3. OSPF Multi-Area Routing (OSPF-MultiArea/)
-
-Includes:
-
-Backbone (Area 0)
-
-Stub or Totally Stubby Areas
-
-Inter-area route summarization
-
-Route filtering
-
-Shows real routing design skill.
-
-4. IPSec Site-to-Site VPN (Site-to-Site-VPN-IPSec/)
-
-Simulates encrypted connectivity between remote sites:
-
-ISAKMP Phase 1
-
-IPSec Phase 2
-
-Crypto ACL
-
-Transform sets
-
-Tunnel verification commands
-
-Strong portfolio piece for cyber roles.
-
-5. L3 Core Switching & ACL Security (L3-Core-Switching/)
-
-Enterprise switching concepts:
-
-L3 core switch
-
-Inter-VLAN routing
-
-Server farm segmentation
-
-ACL filtering policies
-
-Gateway-on-a-stick vs. SVI comparisons
-
-6. High Availability (HSRP) (High-Availability-HSRP/)
-
-Includes:
-
-Redundant default gateway
-
-Active/standby configuration
-
-Failover verification
-
-Priority & preemption
-
-Shows understanding of enterprise failover.
-
-7. IDS/SPAN Monitoring Lab (IDS-SPAN-Monitoring/)
-
-Simulates network monitoring:
-
-SPAN port
-
-Sniffer PC
-
-Packet captures
-
-Malicious traffic examples
-
-ACL-based mitigation
-
-Strong SOC-analysis demonstration.
-
-🛠 Technology Used in Advanced Labs
-
-These labs include:
-
-Cisco 1941/2911 routers (with HWIC-2T modules)
-
-Cisco 2960 access switches
-
-Cisco 3560/Multilayer switches (where supported)
-
-Serial WAN links
-
-VLAN trunking
-
-Layer-3 SVIs
-
-OSPF, static routing, ACLs
-
-NAT, PAT, static NAT
-
-VPN configurations
-
-DMZ perimeter rules
-
-Packet captures and SPAN configuration
-
-All labs are designed in Cisco Packet Tracer for accessibility, but follow real-world network design standards.
+It separates you from “student-level networking” and places you into enterprise-ready territory — exactly what agencies, the public sector, and cybersecurity teams expect in a professional portfolio.
