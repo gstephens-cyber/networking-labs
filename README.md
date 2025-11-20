@@ -1,10 +1,10 @@
 # 🚀 Networking Labs Portfolio
 
-This repository contains my complete collection of hands-on network engineering and network security labs, covering everything from foundational routing and switching to advanced enterprise-grade architectures.
+This repository contains my complete collection of hands-on network engineering and network security labs, covering everything from foundational routing/switching to advanced enterprise-grade architectures.
 
 These labs demonstrate real technical capability — routing protocols, segmentation, ACLs, perimeter design, and secure connectivity across Cisco-based environments.
 
-This repo is actively expanding as I move through advanced networking and cybersecurity specializations.
+This repo is actively expanding as I move through advanced networking specializations.
 
 ---
 
@@ -35,104 +35,113 @@ networking-labs/
     ├── L3-Core-Switching/
     ├── High-Availability-HSRP/
     └── IDS-SPAN-Monitoring/
-🎯 Purpose of This Repository
-This repo demonstrates hands-on, real-world networking and security engineering capability in:
+```
 
-Routing and switching fundamentals
+---
 
-VLANs, trunking, and inter-VLAN routing
+## 🎯 Purpose of This Repo
 
-NAT, PAT, and DHCP relaying
+This repository shows practical, real-world capability in:
 
-ACLs (standard and extended)
+- Routing and switching fundamentals  
+- VLANs, trunking, and inter-VLAN routing  
+- NAT, PAT, DHCP relay  
+- ACLs (standard, extended, stateful concepts)  
+- Layer-2 and Layer-3 network security  
+- Perimeter network design and segmentation  
+- Multi-area OSPF deployment and optimization  
+- IPSec site-to-site VPN implementation  
+- HSRP redundancy and failover design  
+- IDS/SPAN monitoring and traffic analysis  
+- Enterprise DMZ and firewall architecture  
 
-Layer-2 and Layer-3 network security concepts
+Each lab includes:
 
-Enterprise perimeter architecture
+- Topology diagrams  
+- Configuration files (`/configs`)  
+- Screenshots (`/screenshots`)  
+- Verification commands  
+- Documentation (`README.md`)  
 
-Multi-area OSPF routing design
+---
 
-Site-to-site VPN design (IPSec)
+## 🔥 Advanced Networking Track (In Progress)
 
-Redundancy and high availability using HSRP
+These labs represent full enterprise network engineering skills:
 
-IDS/SPAN monitoring and attack traffic inspection
+### **01 – DMZ Firewall Design**
+Perimeter firewall, DMZ segmentation, NAT, inbound/outbound ACLs, and server isolation.
 
-🔥 Advanced Networking Track (In Progress)
-These labs represent enterprise-level network architecture and security engineering.
+### **02 – Enterprise VLAN Segmentation**
+Finance, HR, Admin, Servers, Guest, and production segmentation with ACL-based boundaries.
 
-01 – DMZ Firewall Design
-Full enterprise DMZ with perimeter firewall, internal segmentation, static NAT, and ACL enforcement.
+### **03 – OSPF Multi-Area**
+Area 0 backbone, area separation, summarization, and stub/totally-stubby configurations.
 
-02 – Enterprise VLAN Segmentation
-Finance, HR, Admin, Servers, and Guest VLANs with layer-3 routing and inter-VLAN ACL control.
+### **04 – Site-to-Site IPSec VPN**
+ISAKMP Phase 1, Phase 2, transform sets, crypto ACLs, and tunnel verification.
 
-03 – OSPF Multi-Area
-Area 0 backbone with additional OSPF areas, summarization, and route filtering.
+### **05 – L3 Core Switching**
+SVIs, routed switchports, inter-VLAN routing, server-farm segmentation, ACL policy enforcement.
 
-04 – Site-to-Site IPSec VPN
-ISAKMP Phase 1/2, transform sets, crypto ACLs, and encrypted tunnel validation.
+### **06 – High Availability (HSRP)**
+Active/standby default gateway redundancy, preemption, and failover validation.
 
-05 – L3 Core Switching
-Routed core switch, SVIs, server segmentation, and ACL-based control.
+### **07 – IDS/SPAN Monitoring**
+SPAN port mirroring, traffic sniffing, malware pattern detection, and mitigation strategies.
 
-06 – High Availability (HSRP)
-Active/standby redundancy configuration with failover simulation and validation.
+---
 
-07 – IDS/SPAN Monitoring
-SPAN port monitoring, Wireshark capture, attack analysis, and mitigation techniques.
+## 🧪 Verification Commands
 
-🧪 Verification Commands
-Each lab includes verification such as:
+Typical validation commands used across labs:
 
-show ip route
+- `show ip route`
+- `show ip interface brief`
+- `show vlan`
+- `show spanning-tree`
+- `show access-lists`
+- `show ip ospf neighbor`
+- `show crypto isakmp sa`
+- `show standby`
+- Packet captures (Wireshark)
+- Connectivity tests (`ping`, `traceroute`)
 
-show ip interface brief
+---
 
-show vlan
+## 🛠 Tools & Platforms
 
-show spanning-tree
+- Cisco Packet Tracer  
+- GNS3 / EVE-NG (advanced labs)  
+- Wireshark  
+- Linux / Windows endpoints (SPAN / IDS labs)  
+- Firewall simulation (ASA / PF concepts)  
 
-show access-lists
+---
 
-show ip ospf neighbor
+## 📈 Status
 
-show crypto isakmp sa
+- **Foundational Labs:** Complete  
+- **Intermediate Labs:** Complete  
+- **Advanced Labs:** In Progress  
+- **Integration with Cybersecurity Portfolio:** Ongoing  
+- **Platform Transition:** Packet Tracer (Mac) → GNS3/EVE-NG (PC later)
 
-show standby
+---
 
-Wireshark packet capture analysis
+## 🎓 Learning Integration
 
-Ping / Traceroute connectivity validation
+This lab project directly supports:
 
-🛠 Tools & Platforms
-Cisco Packet Tracer (Primary for current labs on macOS)
+- NAIT Cybersecurity program  
+- IBM Cybersecurity Professional Certificate (Coursera)  
+- Google Cybersecurity Certificate (Coursera)  
+- SOC & detection engineering portfolio  
+- Infrastructure security & network defense pathway  
 
-GNS3 / EVE-NG (for advanced labs later on PC)
+---
 
-Wireshark
+## 📞 Contact
 
-Linux and Windows endpoints (SPAN / IDS)
-
-Firewall simulation (ASA/PF conceptual alignment)
-
-📈 Status
-Section	Status
-Foundational Labs	✅ Complete
-Intermediate Labs	✅ Complete
-Advanced Labs	🏗️ In Progress
-Cybersecurity Integration	🔄 Ongoing
-
-🎓 Additional Learning Track
-Alongside my networking labs, I am actively completing:
-
-IBM Cybersecurity Professional Certificate (Coursera)
-
-Google Cybersecurity Professional Certificate (Coursera)
-
-This repo ties directly into my larger cybersecurity portfolio and hands-on SOC development.
-
-📞 Contact
-LinkedIn: https://www.linkedin.com/in/gregorystephens96
-GitHub: https://github.com/gstephens-cyber
-
+**LinkedIn:** https://www.linkedin.com/in/gregorystephens96  
+**GitHub:** https://github.com/gstephens-cyber  
